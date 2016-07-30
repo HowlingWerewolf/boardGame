@@ -9,7 +9,7 @@ public class Dice {
 	public Dice(int side) {
 		this.side = side;
 	}
-	
+	// donat teszt kommentje
 	public int roll(int howManyTimesToRoll) {
 		Random rand = new Random();
 		
