@@ -16,4 +16,14 @@ public class DiceTest {
 		assertTrue(rollValue <= 12);
 		assertTrue(rollValue > 0);
 	}
+	
+	@Test
+	public void testRoll2() {
+		Dice d6dice = new Dice(1);
+		int rollValue = d6dice.roll(1);
+		
+		System.out.println("The testRoll junit test rolled with 1d1: " + rollValue);
+		
+		assertTrue(rollValue == 1);
+	}
 }

@@ -16,7 +16,7 @@ public class Dice {
 		int rollValue = 0;
 		
 		for (int i = 0; i < howManyTimesToRoll; i++){
-			rollValue += (Math.abs(rand.nextInt()) % side) + 1;
+			rollValue += rand.nextInt(side) + 1;
 		}
 		return rollValue;
 	}
