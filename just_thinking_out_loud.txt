@@ -1,0 +1,49 @@
+The following goals should be kept in mind while developing the current project 
+(which can be changed of course):
+
+- We are developing a framework, which will provide a base to simulate various board games. 
+The goal is to write a solution for the most basic events that may occur during any 
+tabletop game (drawing card from a deck, throwing dice ...)
+
+- When implementing a specific board game, it's rules must be enforced on the gameplay. 
+Also it's components, should be simulated with the pre-existing components, if possible. 
+For example, dice poker 5 d6 dices per players, which can be constructed with the Dice class. 
+Also, the game order - like choosing (the correct) dices to re-roll - is also handled by the software. 
+
+- The game mechanic and the components should be read from a xml or other outer sources. 
+(for example, the rules and the mechanic may read as parameters from an xml, and the 
+attributes of the components - like the face of the cards - can be obtained from jpgs)
+
+
+Challenges:
+
+- Enforcing certain rules can be difficult to implement. For example, how you 
+implement a rule, that allows one player to peek another player's cards, 
+until he/she doesn't peaks a card with a value lesser than 5. Or when a 
+player has a special ability, to draw a card (if he wishes) when another 
+player draws a card @Don: i am thinking of an event list, that must be 
+built before an event takes place on the game board....
+
+- Visualizing and controlling the game components ... yeah
+
+- ...
+
+
+- A (totally not full and not well structured) list of events at the tabletop:
+Forming a deck from a set of cards
+Shuffling a deck
+Separating a deck into smaller decks
+Joining decks
+Drawing from a deck into a players hand
+Drawing from someone's hand
+Putting/retrieving one or more card on a specific place on the table (face down or up)
+Throwing dice
+Read from dice
+Putting/retrieving a dice on a specific place on the table (hidden or not)
+A player or other object/place receives/loses tokens from other source 
+Counting remaining actions (tokens)
+Moving figure on the tabletop
+...
+
+
+
