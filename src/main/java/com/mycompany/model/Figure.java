@@ -2,13 +2,13 @@ package com.mycompany.model;
 
 public abstract class Figure implements FigureActions {
 
-	Position position;
+	Field field;
 	
 	public Figure() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Figure(Position position){
-		this.position = position;
+	public Figure(Field field){
+		this.field = field;
 	}
 }

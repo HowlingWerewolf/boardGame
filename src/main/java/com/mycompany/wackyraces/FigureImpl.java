@@ -5,7 +5,13 @@ import com.mycompany.model.Figure;
 
 public class FigureImpl extends Figure {
 	
-	PositionImpl position;
+	public FigureImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public FigureImpl(Field dest){
+		// TODO Auto-generated constructor stub		
+	}
 
 	@Override
 	public void move(Field dest) {
