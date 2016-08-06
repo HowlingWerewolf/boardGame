@@ -5,17 +5,33 @@ import com.mycompany.model.Figure;
 
 public class FigureImpl extends Figure {
 	
-	public FigureImpl() {
-		// TODO Auto-generated constructor stub
+	FieldManagerImpl fieldManager;
+	
+	public FigureImpl(FieldManagerImpl fieldManager, Field dest){
+		this.fieldManager = fieldManager;
+		move(dest);
 	}
 	
-	public FigureImpl(Field dest){
-		// TODO Auto-generated constructor stub		
-	}
 
 	@Override
 	public void move(Field dest) {
-		throw new UnsupportedOperationException();	
+		this.field = (FieldImpl) dest;
+	}
+	
+	
+	@Override
+	public FieldImpl getField() {
+		return (FieldImpl) field;
+	}
+	
+
+	public FieldManagerImpl getFieldManager() {
+		return fieldManager;
+	}
+	
+
+	public void setFieldManager(FieldManagerImpl fieldManager) {
+		this.fieldManager = fieldManager;
 	}
 
 }

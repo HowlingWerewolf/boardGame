@@ -13,7 +13,6 @@ package com.mycompany.model;
 public abstract class Field {
 	
 	public Field() {
-		// TODO Auto-generated constructor stub
 	}
 	
 }

@@ -8,6 +8,7 @@ public class DiceTest {
 	
 	@Test
 	public void testRoll() {
+		
 		Dice d6dice = new Dice(6);
 		int rollValue = d6dice.roll(2);
 		
@@ -19,6 +20,7 @@ public class DiceTest {
 	
 	@Test
 	public void testRoll2() {
+		
 		Dice d6dice = new Dice(1);
 		int rollValue = d6dice.roll(1);
 		
