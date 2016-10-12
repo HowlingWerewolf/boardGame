@@ -1,9 +1,96 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+  	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+  	xmlns:p="http://primefaces.org/ui">
 <h:head>
 </h:head>
 <h:body>
 	<h3>Wacky Races</h3>
+	<p:layout
+		style="min-width:700px;min-height:600px;max-width:700px;max-height:600px">
+		<p:layoutUnit position="center" resizable="false">
+		    	<h:dataTable border="1" style="width: 200px;">
+						<h:column id="f1">
+							<f:facet name="header">
+								<h:outputText value="Start!"></h:outputText>
+							</f:facet>
+							
+							<!-- 
+							TODO: in glassfish, these pictures cannot be loaded, see this fix for primefaces: 
+							(the fifth way)
+							http://stackoverflow.com/questions/4543936/load-images-from-outside-of-webapps-webcontext-deploy-folder-using-hgraphi
+							 -->
+							<h:graphicImage id="dastardly" value="pics/dastardly.jpg"></h:graphicImage>
+							<h:graphicImage id="penelope" value="pics/penelope.jpg"></h:graphicImage>
+						</h:column>
+						<h:column id="f2" style="min-width:200px;">
+							<f:facet name="header">
+								<h:outputText value="2"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f3">
+							<f:facet name="header">
+								<h:outputText value="3"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f4">
+							<f:facet name="header">
+								<h:outputText value="4"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f5">
+							<f:facet name="header">
+								<h:outputText value="5"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f6">
+							<f:facet name="header">
+								<h:outputText value="6"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f7">
+							<f:facet name="header">
+								<h:outputText value="7"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f8">
+							<f:facet name="header">
+								<h:outputText value="8"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f9">
+							<f:facet name="header">
+								<h:outputText value="9"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f10">
+							<f:facet name="header">
+								<h:outputText value="10"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f11">
+							<f:facet name="header">
+								<h:outputText value="11"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+						<h:column id="f12">
+							<f:facet name="header">
+								<h:outputText value="Finish"></h:outputText>
+							</f:facet>
+							
+						</h:column>
+				</h:dataTable>
+		</p:layoutUnit>
+	</p:layout>
 </h:body>
 </html>
