@@ -6,6 +6,8 @@
 </h:head>
 <h:body>
 	<h3>Wacky Races</h3>
+	<p:graphicImage value="#{imageBean.dastardly}" />
+	<p:graphicImage value="#{imageBean.penelope}" />
 	<p:layout
 		style="min-width:700px;min-height:600px;max-width:700px;max-height:600px">
 		<p:layoutUnit position="center" resizable="false">
@@ -14,14 +16,6 @@
 							<f:facet name="header">
 								<h:outputText value="Start!"></h:outputText>
 							</f:facet>
-							
-							<!-- 
-							TODO: in glassfish, these pictures cannot be loaded, see this fix for primefaces: 
-							(the fifth way)
-							http://stackoverflow.com/questions/4543936/load-images-from-outside-of-webapps-webcontext-deploy-folder-using-hgraphi
-							 -->
-							<h:graphicImage id="dastardly" value="pics/dastardly.jpg"></h:graphicImage>
-							<h:graphicImage id="penelope" value="pics/penelope.jpg"></h:graphicImage>
 						</h:column>
 						<h:column id="f2" style="min-width:200px;">
 							<f:facet name="header">

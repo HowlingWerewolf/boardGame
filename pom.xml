@@ -62,7 +62,17 @@
 			<groupId>org.primefaces</groupId>  
 			<artifactId>primefaces</artifactId>  
 			<version>6.0</version>  
-		</dependency>  
+		</dependency> 
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+		</dependency> 
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
